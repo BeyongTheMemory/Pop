@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"> 
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:src="@drawable/main" 
+        android:contentDescription="@string/empty"/>   
+    <ImageView
+        android:id="@+id/sat_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/sat_item" 
+        android:layout_gravity="bottom|center" 
+        android:contentDescription="@string/empty"/>   
+        
+</merge>

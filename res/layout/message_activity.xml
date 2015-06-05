@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="#f0f0f0"
+    >
+    
+     <!--
+    **
+    ***
+              头部信息
+    ***          
+    **
+    -->
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="消息"
+            android:textColor="#000000"
+             android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/back_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="返回"
+            android:textColor="#1ad9d7"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/writePrivacy_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignParentRight="true"
+            android:text="写私信" 
+            android:textSize="20sp"
+            android:textColor="#dadcdc"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/miao_bian1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/topLayout"
+        android:background="#afb3b2"
+        android:text="" />
+    
+     <!--
+    **
+    ***
+              系统消息
+    ***          
+    **
+    -->
+        <RelativeLayout android:id="@+id/systemMessageLayout"
+             android:layout_below="@+id/miao_bian1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#ffffff" 
+            >
+
+            <ImageView
+                android:id="@+id/systemMessage_imageView"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/system_message" />
+
+            <TextView
+                android:id="@+id/systemMessage_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/systemMessage_imageView"
+                android:textSize="20sp"
+                android:text="系统消息" />
+
+            <ImageView
+                android:id="@+id/systemMessage_extends_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dip"
+                android:src="@drawable/extends_icon" />
+        </RelativeLayout>
+        <TextView
+        android:id="@+id/miao_bian2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/systemMessageLayout"
+        android:background="#afb3b2"
+        android:text="" />
+        <!--
+    **
+    ***
+             私信
+    ***          
+    **
+    -->
+        <RelativeLayout android:id="@+id/personMessageLayout"
+             android:layout_below="@+id/miao_bian2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#ffffff" 
+            >
+
+            <ImageView
+                android:id="@+id/personMessage_imageView"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/person_message" />
+
+            <TextView
+                android:id="@+id/personMessage_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/personMessage_imageView"
+                android:textSize="20sp"
+                android:text="私信" />
+
+            <ImageView
+                android:id="@+id/personMessage_extends_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dip"
+                android:src="@drawable/extends_icon" />
+        </RelativeLayout>
+        <TextView
+        android:id="@+id/miao_bian3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/personMessageLayout"
+        android:background="#afb3b2"
+        android:text="" />
+         <!--
+    **
+    ***
+           泡泡回复
+    ***          
+    **
+    -->
+        <RelativeLayout android:id="@+id/popGetMessageLayout"
+             android:layout_below="@+id/miao_bian3"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#ffffff" 
+            >
+
+            <ImageView
+                android:id="@+id/popGetMessage_imageView"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/pop_getmessage" />
+
+            <TextView
+                android:id="@+id/popGetMessage_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/popGetMessage_imageView"
+                android:textSize="20sp"
+                android:text="泡泡回复" />
+
+            <ImageView
+                android:id="@+id/popGetMessage_extends_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dip"
+                android:src="@drawable/extends_icon" />
+        </RelativeLayout>
+        <TextView
+        android:id="@+id/miao_bian4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/popGetMessageLayout"
+        android:background="#afb3b2"
+        android:text="" />
+               <!--
+    **
+    ***
+          顶
+    ***          
+    **
+    -->
+        <RelativeLayout android:id="@+id/goodMessageLayout"
+             android:layout_below="@+id/miao_bian4"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#ffffff" 
+            >
+
+            <ImageView
+                android:id="@+id/goodMessage_imageView"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/good_message" />
+
+            <TextView
+                android:id="@+id/goodMessage_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/goodMessage_imageView"
+                android:textSize="20sp"
+                android:text="顶" />
+
+            <ImageView
+                android:id="@+id/goodMessage_extends_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dip"
+                android:src="@drawable/extends_icon" />
+        </RelativeLayout>
+        <TextView
+        android:id="@+id/miao_bian5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/goodMessageLayout"
+        android:background="#afb3b2"
+        android:text="" />
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#99DCD7</color>
+    <color name="blue">#01ffde</color>
+   <!--   <color name="green">#39BEB4</color> -->
+    <color name="green">#93D870</color>
+    <color name="backgroundcolor">#f0f0f0</color>
+    <color name="shallowgray">#e1e1e1</color>
+    <color name="textgray">#A39898</color>
+    <color name="shallowgreen">#C9EAE8</color>
+    <color name="transparentgray">#53756E60</color>
+     <color name="transparent_background">#50000000</color> 
+       <color name="popup_main_background">#b0000000</color>
+       <color name="orange">#FF9900</color>
+        <color name="pull_refresh_textview">#000000</color>
+    <color name="gold">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="red">#FF0000</color>
+    <color name="mistyrose">#FFE4E1</color><!--浅玫瑰色 -->
+    <color name="wheat">#F5DEB3</color><!--浅黄色 -->
+    <color name="blackcolor">#000000</color>
+    <color name="whitecolor">#ffffff</color>
+    <color name="bluecolor">#537092</color>
+</resources>

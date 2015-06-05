@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    >
+    
+     <!--
+    **
+    ***
+              头部信息
+    ***          
+    **
+    -->
+     <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/back_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="返回"
+            android:textColor="#1ad9d7"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/miao_bian1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/topLayout"
+        android:background="#afb3b2"
+        android:text="" />
+      <!--
+    **
+    ***
+             账号管理
+    ***          
+    **
+    -->
+     <TextView
+        android:id="@+id/miao_bian2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/topLayout"
+        android:background="#afb3b2"
+        android:layout_marginTop="30dip"
+        android:text="" />
+        <RelativeLayout android:id="@+id/accountManagerLayout"
+             android:layout_below="@+id/miao_bian2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#ffffff" 
+            >
+
+            <TextView
+                android:id="@+id/accountManager_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dip"
+                android:text="账号管理"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+        <TextView
+        android:id="@+id/miao_bian3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/accountManagerLayout"
+        android:background="#afb3b2"
+        android:text="" />
+    <!--
+    **
+    ***
+            通知和提醒
+    ***          
+    **
+    -->
+     <TextView
+        android:id="@+id/miao_bian4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/miao_bian3"
+        android:background="#afb3b2"
+        android:layout_marginTop="30dip"
+        android:text="" />
+        <RelativeLayout android:id="@+id/noticeAndRemindLayout"
+             android:layout_below="@+id/miao_bian4"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#ffffff" 
+            >
+
+            <TextView
+                android:id="@+id/noticeAndRemind_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                 android:layout_marginLeft="17dip"
+                android:text="通知和提醒" />
+        </RelativeLayout>
+        <TextView
+        android:id="@+id/miao_bian5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/noticeAndRemindLayout"
+        android:background="#afb3b2"
+        android:text="" />
+     <!--
+    **
+    ***
+            字体设置
+    ***          
+    **
+   
+      <RelativeLayout android:id="@+id/fontOptionLayout"
+             android:layout_below="@+id/miao_bian5"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#ffffff" 
+            >
+
+            <TextView
+                android:id="@+id/fontOption_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                 android:layout_marginLeft="17dip"
+                android:text="字体设置" />
+        </RelativeLayout>
+        <TextView
+        android:id="@+id/miao_bian6"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fontOptionLayout"
+        android:background="#afb3b2"
+        android:text="" />
+         -->
+    <!--
+    **
+    ***
+            语言设置
+    ***          
+    **
+    
+      <RelativeLayout android:id="@+id/laguageOptionLayout"
+             android:layout_below="@+id/miao_bian5"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#ffffff" 
+            >
+
+            <TextView
+                android:id="@+id/laguageOption_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                 android:layout_marginLeft="17dip"
+                android:text="语言设置" />
+        </RelativeLayout>
+        <TextView
+        android:id="@+id/miao_bian7"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/laguageOptionLayout"
+        android:background="#afb3b2"
+        android:text="" /> 
+        -->
+     <!--
+    **
+    ***
+          隐私与安全
+    ***          
+    **
+    -->
+      <RelativeLayout android:id="@+id/privacyAndSafeLayout"
+             android:layout_below="@+id/miao_bian5"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#ffffff" 
+            >
+
+            <TextView
+                android:id="@+id/privacyAndSafe_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                 android:layout_marginLeft="17dip"
+                android:text="隐私与安全" />
+        </RelativeLayout>
+        <TextView
+        android:id="@+id/miao_bian8"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/privacyAndSafeLayout"
+        android:background="#afb3b2"
+        android:text="" /> 
+     <!--
+    **
+    ***
+         意见反馈
+    ***          
+    **
+    -->  
+        <TextView
+        android:id="@+id/miao_bian9"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/miao_bian8"
+        android:background="#afb3b2"
+        android:layout_marginTop="30dip"
+        android:text="" />
+        <RelativeLayout android:id="@+id/suggestionLayout"
+             android:layout_below="@+id/miao_bian9"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#ffffff" 
+            >
+
+            <TextView
+                android:id="@+id/suggestion_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                 android:layout_marginLeft="17dip"
+                android:text="意见与反馈" />
+        </RelativeLayout>
+        <TextView
+        android:id="@+id/miao_bian10"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/suggestionLayout"
+        android:background="#afb3b2"
+        android:text="" /> 
+           <!--
+    **
+    ***
+          关于冒泡
+    ***          
+    **
+    -->
+      <RelativeLayout android:id="@+id/aboutPopLayout"
+             android:layout_below="@+id/miao_bian10"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#ffffff" 
+            >
+
+            <TextView
+                android:id="@+id/aboutPopLayout_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                 android:layout_marginLeft="17dip"
+                android:text="关于冒泡" />
+        </RelativeLayout>
+        <TextView
+        android:id="@+id/miao_bian11"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/aboutPopLayout"
+        android:background="#afb3b2"
+        android:text="" /> 
+        
+
+</RelativeLayout>

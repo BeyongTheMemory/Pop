@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="@drawable/background"
+    >
+
+      <!--
+    **
+    ***
+              头部信息
+    ***          
+    **
+    -->
+     <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新用户注册"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/back_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="返回"
+            android:textColor="#1ad9d7"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/miao_bian1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/topLayout"
+        android:background="#afb3b2"
+        android:text="" />
+
+     <!--
+    **
+    ***
+             主体
+    ***          
+    **
+    -->
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="250dip"
+        android:layout_below="@+id/miao_bian1"
+        android:layout_marginTop="41dip"
+        android:background="@drawable/border" >
+    
+ <TextView
+        android:id="@+id/username_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/password_textView"
+    
+        android:layout_marginTop="41dp"
+        android:text="用户名:"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/password_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_text"
+        android:layout_marginTop="34dip"
+        android:layout_toLeftOf="@+id/username_text"
+         android:textSize="20sp"
+        android:text="密码:" />
+
+    <com.pop.activity.widget.MyEditText
+        android:id="@+id/password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/password_textView"
+        android:layout_alignBottom="@+id/password_textView"
+        android:layout_alignLeft="@+id/username_text"
+        android:ems="10"
+        android:inputType="textPassword" 
+      />
+
+    <TextView
+        android:id="@+id/sure_password_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_text"
+        android:layout_marginTop="34dip"
+        android:layout_toLeftOf="@+id/username_text"
+        android:text="确认密码:"
+        android:textSize="20sp" />
+
+    <com.pop.activity.widget.MyEditText
+        android:id="@+id/sure_password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sure_password_textview"
+        android:layout_alignLeft="@+id/password_text"
+        android:ems="10"
+        android:inputType="textPassword" 
+         />
+
+   
+
+    <TextView
+        android:id="@+id/information_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sure_password_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dip"
+        android:textColor="#ff0000"
+                android:textSize="20sp"
+        android:text="" />
+
+    <com.pop.activity.widget.MyEditText
+        android:id="@+id/username_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/username_textView"
+        android:layout_marginRight="53dp"
+        android:ems="10" />
+
+   </RelativeLayout>
+    <Button
+        android:id="@+id/regist_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dip"
+        android:text="注册" />
+
+</RelativeLayout>

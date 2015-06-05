@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background">
+
+    
+  
+    <!--
+    **
+    ***
+              上方泡泡图片
+    ***          
+    **
+     -->
+     
+   <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/login_pop" />
+
+    <!--
+    **
+    ***
+              账号密码框
+    ***          
+    **
+     -->
+     
+     <LinearLayout
+        android:focusable="true" android:focusableInTouchMode="true"
+        android:layout_width="0px" android:layout_height="0px">
+      <requestFocus />
+      </LinearLayout>
+
+      <RelativeLayout
+          android:id="@+id/usernameAndpwdLayout"
+          android:layout_width="fill_parent"
+          android:layout_height="190dip"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/imageView1" >
+
+          <EditText
+              android:id="@+id/username_text"
+              android:layout_width="wrap_content"
+              android:layout_height="70dip"
+              android:ems="20"
+              android:hint="账号:" />
+
+          <EditText
+              android:id="@+id/password_text"
+              android:layout_width="wrap_content"
+              android:layout_height="70dip"
+              android:layout_alignParentLeft="true"
+              android:layout_centerVertical="true"
+              android:ems="20"
+              android:hint="密码:"
+              android:inputType="textPassword"
+              android:password="true" />
+
+</RelativeLayout>
+     
+      
+       <TextView
+           android:id="@+id/information_text"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/usernameAndpwdLayout"
+            android:layout_centerHorizontal="true"
+           android:layout_marginTop="5dip"
+           android:text=""
+           android:textColor="#ff0000"
+           android:textSize="23sp" />
+       
+       <!--
+    **
+    ***
+             忘记密码和注册
+    ***          
+    **
+     -->
+      
+    
+<TextView
+    android:id="@+id/forgetpassword_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:text="忘记密码？"
+    android:textSize="20sp"
+    android:textColor="#39BEB4"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/regist_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:text="注册新用户"
+    android:textSize="20sp"
+    android:textColor="#39BEB4"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<Button
+    android:id="@+id/login_button"
+    android:layout_width="300dip"
+    android:layout_height="40dip"
+    android:layout_above="@+id/forgetpassword_text"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="67dp"
+    android:background="#f0f0f0"
+    android:text="登             陆 "
+    android:textSize="25sp" />
+
+
+
+</RelativeLayout>

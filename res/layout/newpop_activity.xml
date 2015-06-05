@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <ImageView
+        android:id="@+id/imagepop_imageView"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/wordpop_image"
+        android:layout_marginRight="55dp"
+        android:src="@drawable/imagepop_icon" />
+
+      <ImageView
+          android:id="@+id/vidopop_image"
+          android:layout_width="100dip"
+          android:layout_height="100dip"
+          android:layout_alignLeft="@+id/wordpop_image"
+          android:layout_below="@+id/wordpop_textView"
+          android:layout_marginTop="45dp"
+          android:src="@drawable/vidopop_icon" />
+
+      <ImageView
+          android:id="@+id/wordpop_image"
+          android:layout_width="100dip"
+          android:layout_height="100dip"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginLeft="44dp"
+          android:layout_marginTop="188dp"
+          android:src="@drawable/wordpop_icon" />
+
+      <ImageView
+          android:id="@+id/voicepop_image"
+          android:layout_width="100dip"
+          android:layout_height="100dip"
+          android:layout_below="@+id/wordpop_textView"
+          android:layout_marginTop="45dp"
+          android:layout_alignLeft="@+id/imagepop_imageView"
+          android:src="@drawable/voicepop_icon" />
+      
+        <!--
+    **
+    ***
+         退出
+    ***          
+    **
+    -->
+<RelativeLayout
+        android:id="@+id/exitLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="#ffffff" 
+         android:layout_alignParentBottom="true">
+
+    <ImageView
+        android:id="@+id/close_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/close_icon" />
+            
+            </RelativeLayout>
+
+<TextView
+    android:id="@+id/wordpop_textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/imagepop_textView"
+    android:layout_alignBottom="@+id/imagepop_textView"
+    android:layout_alignLeft="@+id/wordpop_image"
+    android:layout_marginLeft="29dp"
+    android:text="文字"
+    android:textSize="20sp" />
+
+<TextView
+    android:id="@+id/vidopop_textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/voicepop_textView"
+    android:layout_alignLeft="@+id/wordpop_textView"
+    android:layout_marginLeft="-10dp"
+    android:text="短视频"
+    android:textSize="20sp" />
+
+<TextView
+    android:id="@+id/voicepop_textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/voicepop_image"
+    android:layout_below="@+id/voicepop_image"
+    android:layout_marginLeft="29dp"
+    android:text="语音"
+    android:textSize="20sp" />
+
+<TextView
+    android:id="@+id/imagepop_textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/voicepop_textView"
+    android:layout_below="@+id/imagepop_imageView"
+    android:text="图片"
+    android:textSize="20sp" />
+    
+</RelativeLayout>
+

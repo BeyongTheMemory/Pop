@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/imageview_messageremindback"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/abs__ic_ab_back_holo_light" />
+
+         <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="通知和提醒"
+             android:textColor="@color/textgray"
+            android:textSize="25sp" />
+
+        
+    </RelativeLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textgray" >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearlayout_everydayremind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_more"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:text="附近泡泡提醒提醒"
+            android:textColor="@color/textgray" />
+
+        <ImageView
+            android:id="@+id/imageview_everydayremind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_settings_drag_off" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textgray" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_remindtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_remindtime2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_more" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingTop="20dp"
+                android:text="提醒时间"
+                android:textColor="@color/textgray" />
+
+            <TextView
+                android:id="@+id/textview_remindtimeshow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingBottom="10dp"
+                android:paddingTop="20dp"
+                android:text="9:00"
+                android:paddingRight="10dp"
+                android:textColor="@color/textgray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/textgray" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_activitynotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" 
+        android:background="@drawable/selector_more"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp"
+            android:text="新回复提醒"
+            android:textColor="@color/textgray" />
+
+        <ImageView
+            android:id="@+id/imageview_activitynotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_settings_drag_off" />
+    </LinearLayout>
+   
+
+</LinearLayout>

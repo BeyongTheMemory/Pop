@@ -1,0 +1,119 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:129), pid=6048, tid=8012
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version: 7.0_15-b03
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (23.7-b01 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000000024ce000):  JavaThread "Unknown thread" [_thread_in_vm, id=8012, stack(0x0000000002720000,0x0000000002820000)]
+
+Stack: [0x0000000002720000,0x0000000002820000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00000000024ce000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=8012, stack(0x0000000002720000,0x0000000002820000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.015 loading class 0x0000000002550610 done
+Event: 0.015 loading class 0x0000000002512a50 done
+Event: 0.015 loading class 0x0000000002512a20
+Event: 0.015 loading class 0x0000000002559ba0
+Event: 0.015 loading class 0x0000000002559ba0 done
+Event: 0.015 loading class 0x0000000002559be0
+Event: 0.015 loading class 0x0000000002559be0 done
+Event: 0.015 loading class 0x0000000008aee8f0
+Event: 0.016 loading class 0x0000000008aee8f0 done
+Event: 0.016 loading class 0x0000000002512a20 done
+
+
+Dynamic libraries:
+0x000000013f270000 - 0x000000013f2a3000 	C:\Program Files\Java\jdk1.7.0_15\jre\bin\javaw.exe
+0x00000000777c0000 - 0x0000000077969000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000077460000 - 0x000000007757f000 	C:\Windows\system32\kernel32.dll
+0x000007fefd730000 - 0x000007fefd79c000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefdca0000 - 0x000007fefdd7b000 	C:\Windows\system32\ADVAPI32.dll
+0x000007fefdf60000 - 0x000007fefdfff000 	C:\Windows\system32\msvcrt.dll
+0x000007fefde10000 - 0x000007fefde2f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefde30000 - 0x000007fefdf5d000 	C:\Windows\system32\RPCRT4.dll
+0x0000000077580000 - 0x000000007767a000 	C:\Windows\system32\USER32.dll
+0x000007fefe320000 - 0x000007fefe387000 	C:\Windows\system32\GDI32.dll
+0x000007feffac0000 - 0x000007fefface000 	C:\Windows\system32\LPK.dll
+0x000007fefd8c0000 - 0x000007fefd989000 	C:\Windows\system32\USP10.dll
+0x000007fefbda0000 - 0x000007fefbf94000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_fa396087175ac9ac\COMCTL32.dll
+0x000007fefdd80000 - 0x000007fefddf1000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefdc70000 - 0x000007fefdc9e000 	C:\Windows\system32\IMM32.DLL
+0x000007fefe640000 - 0x000007fefe749000 	C:\Windows\system32\MSCTF.dll
+0x000007fefd2d0000 - 0x000007fefd310000 	C:\Windows\system32\nvinitx.dll
+0x000000000f000000 - 0x000000000f006000 	C:\Program Files\NVIDIA Corporation\CoProcManager\_etoured.dll
+0x000007fefa230000 - 0x000007fefa286000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvd3d9wrapx.dll
+0x000007feff4e0000 - 0x000007feff6b7000 	C:\Windows\system32\SETUPAPI.dll
+0x000007fefd3d0000 - 0x000007fefd406000 	C:\Windows\system32\CFGMGR32.dll
+0x000007feff930000 - 0x000007feffa07000 	C:\Windows\system32\OLEAUT32.dll
+0x000007fefe080000 - 0x000007fefe283000 	C:\Windows\system32\ole32.dll
+0x000007fefd410000 - 0x000007fefd42a000 	C:\Windows\system32\DEVOBJ.dll
+0x000007fefa140000 - 0x000007fefa17d000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvdxgiwrapx.dll
+0x000000006b830000 - 0x000000006b901000 	C:\Program Files\Java\jdk1.7.0_15\jre\bin\msvcr100.dll
+0x000000005a4e0000 - 0x000000005abff000 	C:\Program Files\Java\jdk1.7.0_15\jre\bin\server\jvm.dll
+0x000007fef3280000 - 0x000007fef3289000 	C:\Windows\system32\WSOCK32.dll
+0x000007feffa10000 - 0x000007feffa5d000 	C:\Windows\system32\WS2_32.dll
+0x000007fefde00000 - 0x000007fefde08000 	C:\Windows\system32\NSI.dll
+0x000007fefd7c0000 - 0x000007fefd7fb000 	C:\Windows\system32\WINMM.dll
+0x0000000077980000 - 0x0000000077987000 	C:\Windows\system32\PSAPI.DLL
+0x0000000073ca0000 - 0x0000000073caf000 	C:\Program Files\Java\jdk1.7.0_15\jre\bin\verify.dll
+0x0000000073770000 - 0x0000000073798000 	C:\Program Files\Java\jdk1.7.0_15\jre\bin\java.dll
+0x0000000073750000 - 0x0000000073765000 	C:\Program Files\Java\jdk1.7.0_15\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:E:\adt-bundle-windows-x86_64-20131030\sdk\platforms\android-15\android.jar 
+java_command: com.pop.mgr.downloader.DownloadMgrImpl
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.7.0_15
+CLASSPATH=C:\Program Files\Java\jdk1.7.0_15\lib\tools.jar;C:\Program Files\Java\jdk1.7.0_15\lib\dt.jar;C:\Program Files\Java\jdk1.7.0_15\lib\mysql-connector-java-5.0.5-bin.jar;C:\Program Files\Java\jdk1.7.0_15\mysqlforjdbc\mysql-connector-java-5.0.5-bin.jar
+PATH=C:/Program Files/Java/jdk1.7.0_15/bin/../jre/bin/server;C:/Program Files/Java/jdk1.7.0_15/bin/../jre/bin;C:/Program Files/Java/jdk1.7.0_15/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.7.0_15\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files (x86)\Autodesk\Backburner\;C:\Program Files (x86)\Common Files\Autodesk Shared\;C:\Program Files\TortoiseSVN\bin;D:\app\bin\i386-Win32;C:\Windows\system32;D:\opencv\build\x64\vc11\bin;D:\opencv\build\x86\vc11\bin;;D:\FP\bin\i386-Win32;D:\appservTest\AppServ\Apache2.2\bin;D:\appservTest\AppServ\php6;D:\appservTest\AppServ\MySQL\bin;D:\apache-tomcat-7.0.52\lib;D:\apache-tomcat-7.0.52\bin;D:\mysql-5.6.16-winx64\bin;D:\opencv\build\x64\vc11\bin;D:\opencv\build\x86\vc11\bin;E:\adt-bundle-windows-x86_64-20131030\sdk\platform-tools;E:\adt-bundle-windows-x86_64-20131030\sdk\tools;D:\eclipse;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 4073836k(1826304k free), swap 8145808k(4427588k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (23.7-b01) for windows-amd64 JRE (1.7.0_15-b03), built on Feb 15 2013 13:43:57 by "java_re" with unknown MS VC++:1600
+
+time: Sun Aug 24 17:37:50 2014
+elapsed time: 0 seconds
+

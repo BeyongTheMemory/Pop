@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundcolor" >
+    
+     <TextView
+            android:id="@+id/textView_line1"
+            android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="@color/shallowgray"
+	         />
+          <TextView
+            android:id="@+id/textView_groupbuy_name"
+            android:layout_below="@+id/textView_line1"
+            android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:text="新店开张，代金券8折特卖！"
+	        android:textSize="20sp"
+	        android:layout_marginLeft="10dp"
+	        android:gravity="center_vertical"
+	        android:textColor="@color/black"
+	         />
+            <TextView
+            android:id="@+id/textView_groupbuy_content"
+            android:layout_below="@+id/textView_groupbuy_name"
+            android:layout_width="match_parent"
+	        android:layout_height="30dp"
+	        android:text="后街学长冷饮即将开张啦！80元可抵100元！限时特价！"
+	        android:textSize="13sp"
+	        android:layout_marginLeft="10dp"
+	        android:gravity="center_vertical"
+	        android:singleLine="true"
+	         />
+            <TextView
+            android:id="@+id/textView_line2"
+            android:layout_below="@+id/textView_groupbuy_content"
+            android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="@color/shallowgray"
+	         />
+            
+
+</RelativeLayout>

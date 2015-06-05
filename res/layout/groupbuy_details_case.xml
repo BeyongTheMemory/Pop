@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal" 
+    android:background="@color/backgroundcolor">
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="80dp"
+      android:orientation="vertical"
+      android:layout_weight="1" >
+		    <RelativeLayout
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:orientation="vertical"
+		      android:layout_weight="1"
+		      android:gravity="center_vertical"
+		      >
+		      
+		      <ImageView
+		          android:id="@+id/imageView_1"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:src="@drawable/ic_not_support_refund"
+		          android:layout_marginLeft="15dp"
+		          /> 
+		       <TextView
+		          android:layout_toRightOf="@+id/imageView_1"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text="支持随时退款"
+		          android:textColor="@color/textgray"
+		          android:layout_marginLeft="10dp"
+		           />
+		    </RelativeLayout>
+		    
+		    <RelativeLayout
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:orientation="vertical"
+		      android:layout_weight="1"
+		      android:gravity="center_vertical">
+    
+		          <ImageView
+		          android:id="@+id/imageView_2"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:src="@drawable/ic_not_support_refund"
+		          android:layout_marginLeft="15dp"
+		          /> 
+		       <TextView
+		          android:layout_toRightOf="@+id/imageView_2"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text="过期自动退款"
+		          android:textColor="@color/textgray"
+		          android:layout_marginLeft="10dp"
+		           />
+           </RelativeLayout>
+           
+    </LinearLayout>
+    
+    <TextView
+      android:layout_width="0.5dp"
+	  android:layout_height="50dp"
+	  android:background="@color/textgray"
+	  android:layout_marginTop="15dp"
+	 />
+    
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="80dp"
+      android:orientation="vertical" 
+      android:layout_weight="1">
+		    <RelativeLayout
+		      android:layout_width="match_parent"
+		      android:layout_height="wrap_content"
+		      android:orientation="vertical"
+		      android:layout_weight="1"
+		      android:gravity="center_vertical" >
+		          <ImageView
+		          android:id="@+id/imageView_3"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:src="@drawable/ic_pay_count"
+		          android:layout_marginLeft="10dp"
+		          /> 
+		       <TextView
+		          android:layout_toRightOf="@+id/imageView_3"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text="已出售120份"
+		          android:textColor="@color/textgray"
+		          android:layout_marginLeft="10dp"
+		           />
+		    </RelativeLayout>
+		    
+		    <RelativeLayout
+		      android:layout_width="match_parent"
+		      android:layout_height="wrap_content"
+		      android:orientation="vertical"
+		      android:layout_weight="1"
+		      android:gravity="center_vertical">
+    
+		          <ImageView
+		          android:id="@+id/imageView_4"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:src="@drawable/ic_order_pay_remaining_time"
+		          android:layout_marginLeft="10dp"
+		          /> 
+		       <TextView
+		          android:layout_toRightOf="@+id/imageView_4"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:text="6天7小时1分"
+		          android:textColor="@color/textgray"
+		          android:layout_marginLeft="10dp"
+		           />
+           </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
